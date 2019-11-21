@@ -116,7 +116,8 @@ matrix:
 
     # Linux ppc64le
     #   gcc/cmake
-    - os: linux-ppc64le
+    - os: linux
+      arch: ppc64le
       dist: xenial
       compiler: gcc-9
       addons:
@@ -129,7 +130,8 @@ matrix:
         - CC=gcc-9
         - GENERATOR="cmake . $SANI"
 
-    - os: linux-ppc64le
+    - os: linux
+      arch: ppc64le
       dist: xenial
       compiler: gcc-9
       addons:
@@ -145,7 +147,8 @@ matrix:
         - BUILDDIR=../build
 
     #   clang/configure
-    - os: linux-ppc64le
+    - os: linux
+      arch: ppc64le
       dist: xenial
       compiler: clang-6.0
       addons:
@@ -159,7 +162,8 @@ matrix:
         - GENERATOR="./configure --warn --zlib-compat"
 
     #   clang/cmake
-    - os: linux-ppc64le
+    - os: linux
+      arch: ppc64le
       dist: xenial
       compiler: clang-6.0
       addons:
@@ -174,7 +178,8 @@ matrix:
         - TESTER="$CTEST"
 
     #   clang/cmake
-    - os: linux-ppc64le
+    - os: linux
+      arch: ppc64le
       dist: xenial
       compiler: clang-6.0
       addons:
